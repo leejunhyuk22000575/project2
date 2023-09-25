@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>개인정보 등록</h1>
+    <p>차례대로 정보를 입력해주세요</p>
+    <form action="/action_page.php">
+        이름 : <input type="text" name="username"><br>
+        <fieldset>
+            <legend>성별:</legend>
+            <input type="radio" name="gender" value="male"> 남성 
+            <input type="radio" id="female" name="gender" value="female"> 여성
+        </fieldset>
+
+        결혼여부 <input type="checkbox"  name="marriage" value="yes"><br>
+
+        국가 <select name="country">
+            <optgroup label="아시아">
+                <option value="korea">대한민국</option>
+                <option value="japan">일본</option>
+                <option value="china">중국</option>
+            </optgroup>
+            <optgroup label="유럽">
+                <option value="france">프랑스</option>
+                <option value="uk">영국</option>
+                <option value="germany">독일</option>
+                <option value="greece">그리스</option>
+            </optgroup>
+        </select><br>
+
+        생년월일 <input type="date" name="birthdate"><br>
+
+        <label for="religion">종교:</label>
+        <input list="religions" id="religion" name="religion">
+        <datalist id="religions">
+            <option value="기독교">
+            <option value="불교">
+            <option value="천주교">
+            <option value="원불교">
+            <option value="무교">
+        </datalist><br>
+
+        좋아하는 색 : <input type="color" name="color"><br>
+
+        기타 정보<br>
+        <textarea name="comments" rows="2" cols="50"></textarea><br>
+
+        <input type="submit" value="제출">
+    </form>
+</body>
+</html>

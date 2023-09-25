@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        font: 100% Verdana;
+        margin: 20px;            /*왼쪽 여백 설정*/
+        line-height: 26px;       /*줄 사이 간격 설정*/
+        }
+
+        #top{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        }
+
+
+        #right {
+        background-color: #f1f1f1;
+        border: 1px solid #d4d4d4;   /*테두리 굵기 설정, 박스 안에 글 넣기(테두리 색)*/
+        padding-left: 10px;            /*박스 왼쪽 끝으로부터 간격*/
+        }
+
+        #end {
+        text-align: center;            /*텍스트 수평 정렬*/
+        padding: 10px;                /*글 내용과 테두리 사이 여백 설정*/
+        font-size: 70%;  
+        line-height: 14px;          
+        }
+
+        #top h1, #middle2 h2, #right h3 {
+        color: #4CAF50;
+        }
+
+        #menulist {
+        padding: 0;
+        position: relative;        /*글의 위치를 설정하며 relative는 일반적 문서 흐름따라 설정*/
+        overflow: auto;            /*overflow는 글의 내용이 초과했을 때 처리하는 방법으로 auto로 설정하여 넘치는 경우 스크롤바를 표시*/
+        }
+
+        .menuitem {
+        width: 165px;                 /*메뉴들의 너비 설정*/
+        float: left;                      /*좌측으로 뜨게 하여 가로로 나란히 정렬*/
+        background-color: #555555;
+        color: #ffffff;
+        list-style-type: none;           /*목록의 스타일을 정하는 것으로 점이나 숫자를 붙일 수 있다*/
+        margin: 4px;                  /*각 항목 주변 여백 설정*/
+        padding: 2px;                    /*각 항목 내부 여백 설정*/
+        text-align: center;
+        cursor: pointer;                   /*마우스 커서를 올렸을 때 모양 변경(손가락)*/
+        }
+
+        .menuitem:nth-child(3) {
+        background-color:#04AA6D;        /*n번째 항목 배경색 설정*/
+        }
+
+        .menuitem:hover {
+        background-color: #000;      /*마우스를 항목에 올렸을 때 배경색 변경*/
+        }
+
+        a {
+        color: #000000;        /*다른 sheet링크의 글자색*/
+        }
+
+        a:hover {
+        color: #84c754;     /*마우스 올렸을 때 글자색*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="top">
+            <h1>Welcome to 이준혁's Homepage(22000575)</h1>
+            <p>Use the menu to select different Stylesheets</p>
+        </div>
+        <div id="middle">
+            <div id="left">
+                <ul id="menulist">
+                    <li class="menuitem" onclick="reStyle(0)">
+                    Stylesheet 1</li>
+                    <li class="menuitem" onclick="reStyle(1)">
+                    Stylesheet 2</li>
+                    <li class="menuitem" onclick="reStyle(2)">
+                    Stylesheet 3</li>
+                    <li class="menuitem" onclick="reStyle(3)">
+                    Stylesheet 4</li>
+                    <li class="menuitem" onclick="reStyle()">
+                    No Stylesheet</li>
+                </ul>
+            </div>
+            <div id="middle2">
+                <h2>Same Page Different Stylesheets</h2>
+                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+                    <br>
+                    <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>
+                    ,
+                    <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>
+                    ,
+                    <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>
+                    ,
+                    <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>
+                    .
+                </p>
+                <h2>No Styles</h2>
+                <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+                    <br>
+                    <a href="#" onclick="noStyle();return false">No Stylesheet</a>
+                    .
+                </p>
+            </div>
+            <div id="right">
+                <h3>Side-Bar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <div id="end">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </div>
+    </div>
+</body>
+</html>
