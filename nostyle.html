@@ -16,9 +16,9 @@
                 <ul id="menulist">
                     <li class="menuitem" onclick="reStyle(0)">
                     Stylesheet 1</li>
-                    <li class="menuitem" onclick="reStyle(1)">
-                    Stylesheet 2</li>
-                    <li class="menuitem" onclick="reStyle(2)">
+                    <li class="menuitem" onclick="window.location.href='style1.html';">
+                        Stylesheet 2</li>
+                        <li class="menuitem" onclick="window.location.href='style2.html';">
                     Stylesheet 3</li>
                     <li class="menuitem" onclick="reStyle(3)">
                     Stylesheet 4</li>
@@ -32,9 +32,9 @@
                     <br>
                     <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>
                     ,
-                    <a href="https://exquisite-eclair-0ded6b.netlify.app/style2.com" onclick="reStyle(1);return false">Stylesheet2</a>
+                    <a href="style1.html" onclick="reStyle(1);return true">Stylesheet2</a>
                     ,
-                    <a href="https://exquisite-eclair-0ded6b.netlify.app/style1.html" onclick="reStyle(2);return false">Stylesheet3</a>
+                    <a href="style2.html" onclick="reStyle(2);return true">Stylesheet3</a>
                     ,
                     <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>
                     .
@@ -42,7 +42,7 @@
                 <h2>No Styles</h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
                     <br>
-                    <a href="https://exquisite-eclair-0ded6b.netlify.app" onclick="noStyle();return false">No Stylesheet</a>
+                    <a href="#" onclick="noStyle();return false">No Stylesheet</a>
                     .
                 </p>
             </div>

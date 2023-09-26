@@ -65,13 +65,13 @@
                 <ul id="menulist">
                     <li class="menuitem" onclick="reStyle(0)">
                     Stylesheet 1</li>
-                    <li class="menuitem" onclick="reStyle(1)">
+                    <li class="menuitem" onclick="window.location.href='style1.html';">
                     Stylesheet 2</li>
                     <li class="menuitem" onclick="reStyle(2)" style="background-color: #04AA6D;">
                     Stylesheet 3</li>
                     <li class="menuitem" onclick="reStyle(3)">
                     Stylesheet 4</li>
-                    <li class="menuitem" onclick="reStyle()">
+                    <li class="menuitem" onclick="window.location.href='nostyle.html';">
                     No Stylesheet</li>
                 </ul>
             </div>
@@ -81,9 +81,9 @@
                     <br>
                     <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>
                     ,
-                    <a href="#" onclick="reStyle(1);return false">Stylesheet2</a>
+                    <a href="style1.html" onclick="reStyle(1);return true">Stylesheet2</a>
                     ,
-                    <a href="#" onclick="reStyle(2);return false">Stylesheet3</a>
+                    <a href="style2.html" onclick="reStyle(2);return true">Stylesheet3</a>
                     ,
                     <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>
                     .
@@ -91,7 +91,7 @@
                 <h2 style="color: #4CAF50;">No Styles</h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
                     <br>
-                    <a href="#" onclick="noStyle();return false">No Stylesheet</a>
+                    <a href="nostyle.html" onclick="noStyle();return true">No Stylesheet</a>
                     .
                 </p>
             </div>
