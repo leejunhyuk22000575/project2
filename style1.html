@@ -5,41 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            font: 100% Courier New;
-            margin: 20px;
-            line-height: 26px;
-            background-color: black;
-        }
-
-        #top{
-            color: #84c754;
-            padding: 7px;
-        }
-        #middle{
-            padding: 0;
-            color: #84c754;
-        }
-        #right{
-            color:white;
-            border: 1px solid white;
-            border-radius: 4px;
-            padding: 10px;
-            width: 340px;
-            top: 0;
-            right: 0;
-            position: absolute;
+        .menuitem{
+            color: white;
+            background-color: #d64836;
+            cursor: pointer;
+            text-align: center;
+            margin: 8px;
+            padding: 6px;
+            border: #d64836 solid 1px;
         }
     </style>
 </head>
-<body>
+<body style="background-color: #d64836;">
     <div>
-        <div id="top">
-            <h1>Welcome to My Homepage</h1>
-            <p>Use the menu to select different Stylesheets</p>
+        <div id="top" style="color: white; line-height: 24px; margin: 10px;">
+            <h1 style="font-size: 360%;">Welcome to My Homepage</h1>
+            <p style="font-size: 200%;">Use the menu to select different Stylesheets</p>
         </div>
-        <div id="middle">
-            <div id="left">
+        <div id="middle" style="background-color: white; position: relative; padding: 5px;">
+            <div id="left" style="float: right; width: 190px;">
                 <ul>
                     <li class="menuitem" onclick="reStyle(0)">
                     Stylesheet 1</li>
@@ -54,8 +38,8 @@
                 </ul>
             </div>
             <div id="middle2">
-                <h1>Same Page Different Stylesheets</h1>
-                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+                <h1 style="color: #d64836; font-size: 180%;">Same Page Different Stylesheets</h1>
+                <p style="font-size: 85%;">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
                     <br>
                     <a href="#" onclick="reStyle(0);return false">Stylesheet1</a>
                     ,
@@ -66,19 +50,19 @@
                     <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>
                     .
                 </p>
-                <h2>No Styles</h2>
+                <h2 style="color: #d64836;">No Styles</h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
                     <br>
                     <a href="#" onclick="noStyle();return false">No Stylesheet</a>
                     .
                 </p>
             </div>
-            <div id="right">
-                <h3>Side-Bar</h3>
+            <div id="right" style="background-color: #f7bcb6; color: #d64836;">
+                <h3">Side-Bar</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
             </div>
         </div>
-        <div id="end">
+        <div id="end" style="color: white; text-align: center; font-size: 80%;">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         </div>
     </div>
