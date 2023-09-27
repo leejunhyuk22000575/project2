@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fdfdfd;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #fdfdfd;
+            background-color: #fdfdfd;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .picture {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1px;
+        }
+
+        .input {
+            margin: 0 0;
+        }
+
+        .input label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .input input[type="text"],
+        .input input[type="password"] {
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .rememberme {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        }
+
+        .signin {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 120px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .bottom {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="picture" src="1.PNG">
+        <h2 style="font-size: 30px; font-weight: lighter;">Please sign in</h2>
+        <div class="input">
+            <input type="text" id="email" name="email" placeholder="Email address">  
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <div class="input rememberme">
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label>
+        </div>
+        <button class="signin">Sign in</button>
+        <p class="bottom">© 2017–2023</p>
+    </div>
+</body>
+</html>
